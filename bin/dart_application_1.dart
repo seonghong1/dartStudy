@@ -167,5 +167,25 @@ void main(List<String> arguments) {
   var intData3;
   // ??= value -> 앞의 변수의 값이 null이면 value를 할당
   intData3 ??= 3;
+  intData3++;
+  intData3--;
   print(intData3);
+
+  // 비교
+  int intNumber001 = 1;
+  int intNumber002 = 2;
+  print(intNumber001 < intNumber002);
+  print(intNumber001 == intNumber002);
+  print(intNumber001 != intNumber002);
+
+  // 타입  && || and, or 표현은 자바스크립트와 동일
+  int intNumber003 = 15;
+  print(intNumber003 is int);
+  print(intNumber003 is String);
+  print(intNumber003 is bool);
+  print(intNumber003 is! bool);
+  print(intNumber003 is! int);
+
+  bool result001 = 12 > 10 && 1 > 0;
+  print('result : $result001');
 }
